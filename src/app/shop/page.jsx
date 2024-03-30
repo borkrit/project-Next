@@ -10,7 +10,7 @@ export default function ShopPage() {
     async function sendData(inputData) {
 
         if(inputData){
-            const response = await fetch(`${window.origin}/api/posts`,{
+            const response = await fetch(`https://master.d1h1ixz60dtfeb.amplifyapp.com/api/posts`,{
                 method: 'POST',
                 body: JSON.stringify({
                     title: inputData}),

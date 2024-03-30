@@ -4,7 +4,7 @@ import styles from "./style.module.css";
 async function getData() {
 
 
-    const data = await fetch(`${window.origin}/api/posts`, {
+    const data = await fetch(`https://master.d1h1ixz60dtfeb.amplifyapp.com/api/posts`, {
         method: 'GET',
         cache: 'no-store'
     });
