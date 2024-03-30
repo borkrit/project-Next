@@ -4,7 +4,7 @@ import styles from "./style.module.css";
 async function getData() {
 
 
-    const data = await fetch('http://localhost:3000/api/posts', {
+    const data = await fetch(`${window.origin}/api/posts`, {
         method: 'GET',
         cache: 'no-store'
     });

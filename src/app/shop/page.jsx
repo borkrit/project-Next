@@ -10,7 +10,7 @@ export default function ShopPage() {
     async function sendData(inputData) {
 
         if(inputData){
-            const response = await fetch('http://localhost:3000/api/posts',{
+            const response = await fetch(`${window.origin}/api/posts`,{
                 method: 'POST',
                 body: JSON.stringify({
                     title: inputData}),

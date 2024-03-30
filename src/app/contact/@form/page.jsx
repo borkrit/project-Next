@@ -10,7 +10,7 @@ export default  function ListSlot (){
             message:formData.get('message')
         }
 
-        const response = await fetch('http://localhost:3000/api/comments',{
+        const response = await fetch('https://project-next-l1g5.vercel.app/api/comments',{
             method: 'POST',
             body: JSON.stringify(dataObject),
             headers: {
