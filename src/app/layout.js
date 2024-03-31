@@ -12,15 +12,15 @@ export const metadata = {
 export default function RootLayout({ children,modal }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <nav>
-          <Link href={'/'}>Home</Link>
-          <Link href={'/contact'}>Contact</Link>
-          <Link href={'/shop'}> Shop </Link>
-        </nav>
-      {children}
-        {modal}
-      </body>
+    <body className={inter.className}>
+    <nav>
+      <Link href={'/'}>Home</Link>
+      <Link href={'/contact'}>Contact</Link>
+      <Link href={'/shop'}> Shop </Link>
+    </nav>
+    {children}
+    {modal}
+    </body>
     </html>
   );
 }

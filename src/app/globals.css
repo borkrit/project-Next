@@ -86,6 +86,7 @@ body {
 }
 
 body {
+  position: relative;
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -105,3 +106,28 @@ a {
   text-decoration: none;
 }
 
+.modal-backdrop{
+  height: max-content;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+
+}
+ dialog {
+   position: absolute;
+   width: 100vw;
+   height: 90%;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   background: rgba(94, 65, 65, 0.75);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+.modal-backdrop  img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
