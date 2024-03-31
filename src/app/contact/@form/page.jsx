@@ -10,7 +10,7 @@ export default  function ListSlot (){
             message:formData.get('message')
         }
 
-        const response = await fetch('https://master.d1h1ixz60dtfeb.amplifyapp.com/api/comments',{
+        const response = await fetch('/api/comments',{
             method: 'POST',
             body: JSON.stringify(dataObject),
             headers: {
