@@ -1,6 +1,6 @@
 import styles from "./style.module.css";
 
-export default function Layout ({children,form,posts}){
+export default function Layout ({children,forms,posts}){
 
     return(
         <section className={styles.contact__wrapper} >
@@ -12,7 +12,7 @@ export default function Layout ({children,form,posts}){
                     {posts}
                 </div>
                 <div className={styles.contact__slots}>
-                    {form}
+                    {forms}
                 </div>
             </div>
         </section>

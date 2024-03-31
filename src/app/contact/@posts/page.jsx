@@ -4,7 +4,7 @@ import styles from "./style.module.css";
 async function getData() {
 
 
-    const data = await fetch(`/api/posts`, {
+    const data = await fetch(`https://project-next-l1g5.vercel.app/api/posts`, {
         method: 'GET',
         cache: 'no-store'
     });
